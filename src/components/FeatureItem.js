@@ -4,12 +4,7 @@ import React from 'react';
 // in both URLs and html attributes
 import slugify from 'slugify';
 
-// This object will allow us to
-// easily convert numbers into US dollar values
-const USCurrencyFormat = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD'
-});
+import {USCurrencyFormat} from './../App';
 
 class FeatureItem extends React.Component {
   render() {
